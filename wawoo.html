@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources Section</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+   <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: Arial, sans-serif;
+  color: #222; */
+}
+
+.resources {
+      font-family: Arial, sans-serif;
+  color: #222;
+  padding: 60px 40px;
+  background: #fff;
+}
+
+.resources-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 60px;
+}
+
+/* Columns */
+.column h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.column p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Featured resources */
+.featured h4 {
+  margin-bottom: 16px;
+}
+
+.resource-box {
+  display: block;
+  padding: 18px 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.resource-box:hover {
+  border-color: #14a800;
+}
+
+/* More link */
+.more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  color: #14a800;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .resources-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+   </style>
+</head>
+<body>
+
+<section class="resources">
+  <div class="resources-container">
+
+    <!-- Column 1 -->
+    <div class="column">
+      <h4>Success stories</h4>
+      <p>Discover how teams work strategically and grow together.</p>
+
+      <h4>How to hire</h4>
+      <p>Learn about the different ways to get work done.</p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="column">
+      <h4>Reviews</h4>
+      <p>See what it’s like to collaborate on Upwork.</p>
+
+      <h4>How to find work</h4>
+      <p>Learn about how to grow your independent career.</p>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="column featured">
+      <h4>Featured resources</h4>
+
+      <a href="#" class="resource-box">
+        How to Hire Freelancers on Upwork
+      </a>
+
+      <a href="#" class="resource-box">
+        How to Use Upwork as a Freelancer
+      </a>
+
+      <a href="#" class="resource-box">
+        Grow Your Freelance Business
+      </a>
+
+      <a href="#" class="more">
+        More resources →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

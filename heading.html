@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ===== Top Header ===== */
+        .top-header {
+            background: #111;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .top-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 8px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* ===== Main Header ===== */
+        .main-header {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 90px;
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .top-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 5px;
+            }
+
+            .nav {
+                display: none;
+                /* you can replace this with hamburger later */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="top-container">
+            <span>Email: info@example.com</span>
+            <span>Call: +234 800 000 0000</span>
+        </div>
+    </header>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="main-container">
+            <img src="logo.png" class="logo" alt="Logo">
+
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+</body>
+
+</html>

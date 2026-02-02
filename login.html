@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in to Upwork</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f7f7f7;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 48px 40px;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .login-title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #001e00;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .input-group {
+            margin-bottom: 16px;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #5e6d55;
+            font-size: 18px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 14px 16px 14px 48px;
+            border: 1px solid #d5e0d5;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #001e00;
+            transition: border-color 0.2s;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #14a800;
+        }
+
+        .input-field::placeholder {
+            color: #9aaa97;
+        }
+
+        .continue-btn {
+            width: 100%;
+            padding: 14px;
+            background: #14a800;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-bottom: 24px;
+        }
+
+        .continue-btn:hover {
+            background: #0e8500;
+        }
+
+        .divider {
+            text-align: center;
+            color: #9aaa97;
+            font-size: 14px;
+            margin: 24px 0;
+            position: relative;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            background: #d5e0d5;
+        }
+
+        .divider::before {
+            left: 0;
+        }
+
+        .divider::after {
+            right: 0;
+        }
+
+        .social-btn {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #d5e0d5;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            background: white;
+        }
+
+        .google-btn {
+            background: #4285f4;
+            color: white;
+            border: none;
+        }
+
+        .google-btn:hover {
+            background: #3367d6;
+        }
+
+        .apple-btn {
+            background: white;
+            color: #001e00;
+        }
+
+        .apple-btn:hover {
+            background: #f7f7f7;
+        }
+
+        .google-icon {
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #4285f4;
+            font-size: 14px;
+        }
+
+        .apple-icon {
+            font-size: 20px;
+        }
+
+        .signup-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .signup-text {
+            color: #5e6d55;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .signup-btn {
+            width: 100%;
+            padding: 14px;
+            background: white;
+            color: #14a800;
+            border: 2px solid #14a800;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .signup-btn:hover {
+            background: #f0fdf4;
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 32px 24px;
+            }
+
+            .login-title {
+                font-size: 24px;
+            }
+
+            .input-field,
+            .continue-btn,
+            .social-btn,
+            .signup-btn {
+                font-size: 15px;
+                padding: 12px;
+            }
+
+            .input-field {
+                padding-left: 44px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="login-title">Log in to Upwork</h1>
+        
+        <form>
+            <div class="input-group">
+                <div class="input-wrapper">
+                    <span class="input-icon">👤</span>
+                    <input 
+                        type="text" 
+                        class="input-field" 
+                        placeholder="Username or Email"
+                    >
+                </div>
+            </div>
+
+            <button type="submit" class="continue-btn">Continue</button>
+        </form>
+
+        <div class="divider">or</div>
+
+        <button class="social-btn google-btn">
+            <span class="google-icon">G</span>
+            Continue with Google
+        </button>
+
+        <button class="social-btn apple-btn">
+            <span class="apple-icon">🍎</span>
+            Continue with Apple
+        </button>
+
+        <div class="signup-section">
+            <p class="signup-text">Don't have an Upwork account?</p>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>

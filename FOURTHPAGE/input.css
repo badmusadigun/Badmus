@@ -1,0 +1,740 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.headerone{
+  position: fixed;
+  background-color: white;
+  height: 90px;
+  width: 100%;
+  top: 0;
+   z-index: 1000;
+  background: white;
+  left: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.imglogo{
+        width:90px ;
+     }
+
+.burger{
+  display: flex;
+  gap: 35px;
+  padding: 3px;
+  margin-left: 40px;
+  /* justify-content: space-around; */
+}
+
+    .search-container{
+    display:flex;
+    margin-top: -10px;
+    align-items:center;
+    border:1px solid #ccc;
+    border-radius:8px;
+    /* padding:6px 10px; */
+    width:300px;
+    background:#fff;
+}
+
+.search-container input{
+    width:100%;
+    border:none;
+    outline:none;
+    padding-left:5px;
+}
+
+.search-container select{
+    border:none;
+    outline:none;
+    background:none;
+    padding-left:10px;
+    cursor:pointer;
+}
+
+
+.btn-login{
+  text-decoration: none;
+  padding-top: 5px;
+  font-size: 20px;
+  color: black;
+    font-size:14px;
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+.btn-signup{
+    padding:8px 18px;
+    background:#14a800;
+    color:#fff;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.main{
+        display: flex;
+
+        /* position: sticky; */
+        /* justify-content: space-between; */
+        margin: 20px;
+        /* gap: 20px; */
+     }
+
+.headertwo{
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+  top: 0;
+  z-index: 999;
+  left: 0;
+   margin-top: 90px;
+  width: 100%;
+}
+
+.main-header{
+  /* margin-left: 50px; */
+  /* width: 100%; */
+    /* max-width: 1200px; */
+            margin: auto;
+            padding: 20px 20px;
+
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            /* justify-content: space-between; */
+}
+
+.main-header a{
+  text-decoration: none;
+  color: #111;
+}
+
+@media (max-width:1024px) {
+   .burger{
+    display: none;
+   } 
+   .headertwo{
+    display: none;
+   }
+}
+
+
+
+
+
+
+
+
+
+.sectionone {
+    display: flex;
+    padding: 40px 20px;
+    /* top: 100px; */
+    margin-top: 150px;
+    justify-content: center;
+    /* max-width: 1200px; */
+    /* margin: 60px auto; */
+    /* gap: 20px; */
+    /* padding: 20px; */
+    /* flex-wrap: wrap; */
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: stretch;
+    position: relative;
+}
+
+.about {
+    /* margin-top: 100px; */
+    background: #edf1f4;
+    padding: 70px 50px;
+    border-radius: 40px 0 0 40px;
+    height: 100%;
+}
+
+.boy {
+    margin-top: 100px;
+}
+
+.about h1 {
+    font-family: "Ppneuemontreal Variable", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+    color: rgb(46, 51, 56);
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-family: Upworkrza, sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 28px;
+    color: rgb(46, 51, 56);
+    width: 100%;
+}
+
+.image {
+    /* flex: 1; */
+    position: relative;
+    /* min-width: 280px; */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 40px 40px 0;
+    object-fit: cover;
+}
+
+.hay {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+}
+
+.hay h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Ppneuemontreal Variable", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 550;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.hay p {
+    /* font-size: 50px; */
+    font-family: "Ppneuemontreal Variable", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 28px;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width:900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .about h1 {
+        width: 100%;
+        font-size: 40px;
+        margin-bottom: -5px;
+    }
+
+    .about p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .about {
+        /* border-radius: 40px; */
+        margin-bottom: -40px;
+        margin-left: -40px;
+        background-color: white;
+        width: 100%;
+    }
+
+    .image img {
+        border-radius: 0 0 0 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:450px) {
+    .about {
+        margin-left: -40px;
+    }
+
+    .about h1 {
+        width: 100%;
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+
+    .about p {
+        width: 100%;
+        margin-top: -20px;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .image img {
+        width: 100%;
+    }
+}
+@media (max-width:350px) {
+    .about h1{
+        width: 100%;
+        font-size: 30px;
+    }
+}
+
+.sectiontwo {
+    background-color: #ffffff;
+    padding-top: 30px;
+    /* padding: 20px; */
+    max-width: 91%;
+    margin: auto;
+
+}
+
+
+.sectiontwo p {
+    font-family: "Ppneuemontreal Variable", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(46, 51, 56);
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.sectiontwo img {
+    width: 38%;
+}
+
+.den {
+    width: 12%;
+}
+
+@media (max-width:768px) {
+    .sectiontwo {
+        padding: 10px;
+    }
+
+    .sectiontwo p {
+        font-size: 14px;
+        font-weight: 450;
+        width: 100%;
+    }
+
+    .sectiontwo img {
+        width: 100%;
+    }
+}
+
+
+.sectionthree{
+    padding: 50px;
+    /* border-radius: 20px; */
+}
+
+
+.con-three{
+    /* padding: 50px 30px; */
+    border-radius: 20px;
+    display: flex;
+     width: 100%;
+        min-height: 100vh;
+        background: #f3f5f7;
+        padding: 40px 0;
+}
+.left-space{
+    width: 35%;
+        padding-left: 40px;
+
+}
+.left-space h1{
+     color: #108a00;
+        font-size: 38px;
+        margin-bottom: 10px;
+}
+.left-space h2{
+     font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        color: #2e3338;
+}
+.card{
+     display: flex;
+        gap: 20px;
+        margin-bottom: 60px;
+}
+.card img{
+   width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+
+}
+.card p{
+    font-family: "Ppneuemontreal Variable", Arial, sans-serif;
+font-size: 16px;
+font-weight: 450;
+line-height: 24px;
+color: rgb(46, 51, 56);
+}
+.card a{
+      color: #108a00;
+        font-weight: bold;
+        text-decoration: none;
+}
+.card a:hover{
+    color: black;
+}
+.right-space{
+    width: 65%;
+        padding-left: 30px;
+}
+
+.info h2{
+    font-family: "Ppneuemontreal Variable", Arial, sans-serif;
+font-size: 32px;
+font-weight: 550;
+line-height: 40px;
+color: rgb(46, 51, 56);
+margin-bottom: 10px;      
+}
+.info p{
+     font-family: "Ppneuemontreal Variable", Arial, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 22px;
+color: rgb(94, 109, 85);
+    margin: 0 0 10px 0;
+        /* font-size: 15px; */
+        line-height: 1.5;
+        max-width: 90%;
+}
+@media (max-width:900px) {
+    .sectionthree{
+        width: fit-content;
+    }
+    .con-three{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .left-space{
+        width: 100%;
+         text-align: left;
+            margin-bottom: 30px;
+    }
+    .right-space{
+           width: 100%;
+            padding-right: 0;
+    }
+    .info p{
+        max-width: 100%;
+    }
+}
+@media (max-width:480px) {
+    .con-three{
+    background-color: white;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .left-space h1{
+       margin-left: -40px; 
+        width: 100%;
+    }
+    .left-space h2{
+        width: 100%;
+        font-size: 25px;
+        margin-left: -40px;
+    }
+    .card img{
+        margin-left: -40px;
+    }
+    .info{
+        margin-left: -40px;
+    }
+    .info p{
+        max-width: 100%;
+    }
+    .card h2{
+        font-size: 20px;
+    }
+}
+@media (max-width:320px) {
+    .left-space h1{
+        font-size: 22px;
+        font-weight: 200;
+        margin-left: -80px;
+        width: 100%;
+    }
+    .left-space h2{
+        margin-left: -80px;
+        font-size: 15px;
+        font-weight: 400;
+        max-width: 100%;
+    }
+    .card{
+        margin-left: -20px;
+    }
+    .info p{
+        font-size: 12px;
+        /* padding-left: 20px; */
+        /* width: 100%; */
+    }
+}
+
+.section-four{
+     width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.left-one{
+    flex: 1;
+    /* width: 60%; */
+}
+.left-one h1{
+    font-family: "Ppneuemontreal Variable", Arial, sans-serif;
+font-size: 55px;
+font-weight: 550;
+line-height: 72px;
+color: rgb(46, 51, 56);
+margin-bottom: 30px;
+}
+.button{
+    display: flex;
+    gap: 15px;
+}
+.btn{
+   display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .3s;
+}
+
+
+.talent{
+    background: green;
+    color: white;
+}
+.work{
+   border: 2px solid green;
+    color: green;
+}
+.right-one{
+    flex: 1;
+}
+.right-one img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+@media (max-width:980px) {
+    .section-four{
+        flex-direction: column;
+        width: 100%;
+        margin-top: -100px;
+        margin-left: -20px;
+    }
+    .left-one h1{
+        font-size: 50px;
+    }
+    .button{
+        flex-direction: column;
+    }
+    .btn{
+        max-width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width:480px) {
+    .right-one img{
+        max-width: 100%;
+        /* height: 100vh; */
+    }
+    .left-one h1{
+        font-size: 30px;
+    }
+}
+
+
+.footer {
+  background: #111;
+  color: #fff;
+  margin: 20px;
+  border-radius: 15px;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #333;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-col a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+/* SOCIAL PART */
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+  font-size: 18px;
+}
+
+.boss {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social span {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* BOTTOM PART */
+.footer-bottom {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding-top: 25px;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* MOBILE DROPDOWN */
+.footer-header .arrow {
+  display: none;
+}
+.phone{
+    display: flex;
+}
+
+.bossman{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+  }
+
+  .footer-header h4 {
+    margin: 0;
+  }
+
+  .footer-header .arrow {
+    display: block;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+
+  .footer-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .footer-col.active .footer-list {
+    max-height: 500px;
+  }
+
+  .footer-col.active .arrow {
+    transform: rotate(180deg);
+  }
+
+  .footer-social {
+    flex-direction: column;
+  }
+
+  .boss {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: -100px;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;   /* ✅ FIXED */
+    gap: 10px;
+  }
+
+.phone{
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.booman{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+}

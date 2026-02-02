@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pricing Section</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+/* -------- CONTAINER -------- */
+.pricing-section {
+    width: 100%;
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* -------- WRAPPER -------- */
+.pricing-wrapper {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* -------- CARD -------- */
+.card {
+    background: #fff;
+    padding: 40px 35px;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    position: relative;
+}
+
+/* POPULAR TAG */
+.popular-tag {
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    background: #b9eaa8;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* TITLE */
+.card h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.card small {
+    color: #666;
+    font-size: 14px;
+}
+
+/* SERVICE FEE */
+.service-fee {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* CONTENT LIST */
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.card ul li::before {
+    content: '✔';
+    color: green;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.card button {
+    width: 100%;
+    padding: 14px 0;
+    margin-top: 25px;
+    border: 2px solid #14a800;
+    border-radius: 30px;
+    background: #fff;
+    color: #14a800;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.card button:hover {
+    background: #14a800;
+    color: #fff;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 870px) {
+    .pricing-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<section class="pricing-section">
+
+    <div class="pricing-wrapper">
+
+        <!-- BASIC CARD -->
+        <div class="card">
+            <h2>Basic</h2>
+            <small>For starting out</small>
+
+            <p class="service-fee">5% Service fee after hiring</p>
+
+            <p><strong>Basic plan includes:</strong></p>
+
+            <ul>
+                <li>AI-powered features</li>
+                <li>Collaboration and project tracking tools</li>
+                <li>Pay as work is completed</li>
+            </ul>
+
+            <button>Get started for free</button>
+        </div>
+
+        <!-- BUSINESS PLUS CARD -->
+        <div class="card">
+            <div class="popular-tag">POPULAR</div>
+
+            <h2>Business Plus</h2>
+            <small>For growing</small>
+
+            <p class="service-fee">10% Service fee after hiring</p>
+
+            <p><strong>Everything in Basic, plus:</strong></p>
+
+            <ul>
+                <li>Instant access to pre-vetted top 1% of talent</li>
+                <li>Uma Recruiter</li>
+                <li>Teams controls</li>
+            </ul>
+
+            <button>Get started for free</button>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
+

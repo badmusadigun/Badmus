@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Results</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  padding: 60px 5%;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* Cards Container */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* Category */
+.category {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2ecc71;
+  margin-bottom: 20px;
+}
+
+.category i {
+  font-size: 18px;
+}
+
+/* Text */
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Stars */
+.stars {
+  color: #f59e0b;
+  margin-bottom: 25px;
+}
+
+/* Footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-text {
+  font-size: 13px;
+  color: #555;
+}
+
+.footer-text span {
+  display: block;
+  margin-top: 6px;
+  color: #888;
+  font-size: 12px;
+}
+
+/* Avatar */
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Green accent shape */
+.card::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #2ecc71, #a7f3d0);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  border-bottom-right-radius: 20px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2 class="section-title">Real results from clients</h2>
+
+<div class="testimonials">
+
+  <!-- Card 1 -->
+  <div class="card">
+    <div class="category">
+      <i class="fa-solid fa-robot"></i>
+      AI SERVICES
+    </div>
+
+    <p>
+      "Rick is a fantastic AI/ML engineer with specialization in LLMs,
+      delivering end-to-end solutions. We had a few concepts when we
+      started the work; ultimately, he delivered a working solution.
+      Looking forward to working with him again."
+    </p>
+
+    <div class="stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+
+    <div class="card-footer">
+      <div class="footer-text">
+        Work done by Richard C.
+        <span>LLM/RAG agent system development<br>Mar 28, 2025</span>
+      </div>
+      <img src="https://i.pravatar.cc/100?img=1" class="avatar">
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <div class="category">
+      <i class="fa-solid fa-code"></i>
+      DEV & IT
+    </div>
+
+    <p>
+      "Haris came in and helped us transfer knowledge from our departing
+      developer, meeting a serious deadline, without fail. His knowledge
+      and experience are exceptional."
+    </p>
+
+    <div class="stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+
+    <div class="card-footer">
+      <div class="footer-text">
+        Work done by Haris S.
+        <span>Full-Stack Developer<br>Apr 7, 2025</span>
+      </div>
+      <img src="https://i.pravatar.cc/100?img=8" class="avatar">
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <div class="category">
+      <i class="fa-solid fa-palette"></i>
+      DESIGN & CREATIVE
+    </div>
+
+    <p>
+      "Ezzan did an amazing job editing my videos — fast turnaround,
+      great attention to detail, and very easy to work with. He delivers
+      high-quality work consistently. Highly recommend him!"
+    </p>
+
+    <div class="stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+
+    <div class="card-footer">
+      <div class="footer-text">
+        Work done by Ezzan S.
+        <span>Video Editor<br>Mar 14, 2025</span>
+      </div>
+      <img src="https://i.pravatar.cc/100?img=12" class="avatar">
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Text Cards</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 30%;
+            cursor: pointer;
+        }
+
+        .media-box {
+            width: 100%;
+            height: 230px;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .media-box img,
+        .media-box video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 14px 0 6px 0;
+        }
+
+        /* Hidden text */
+        .hidden-text {
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            color: #555;
+            font-size: 14px;
+            transition: opacity .3s ease, height .3s ease;
+        }
+
+        /* Button also hidden */
+        .hidden-btn {
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            margin-top: 10px;
+            transition: opacity .3s ease, height .3s ease;
+        }
+
+        .green-btn {
+            background: #14a800;
+            color: white;
+            border: none;
+            padding: 12px 0;
+            width: 60%;
+            border-radius: 7px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        /* When you hover, show hidden text */
+        .card:hover .hidden-text {
+            opacity: 1;
+            height: auto;
+        }
+
+        .card:hover .hidden-btn {
+            opacity: 1;
+            height: auto;
+        }
+
+        @media (max-width: 900px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="cards">
+
+        <!-- CARD 1 (Video) -->
+        <div class="card">
+            <div class="media-box">
+                <video autoplay muted loop>
+                    <source src="your-video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="title">Posting jobs is always free</div>
+
+            <!-- HIDDEN TEXT -->
+            <div class="hidden-text">
+                Anyone can create an account and post a job without paying.
+            </div>
+        </div>
+
+
+        <!-- CARD 2 (Image + button) -->
+        <div class="card">
+            <div class="media-box">
+                <img src="your-image1.jpg">
+            </div>
+
+            <div class="title">Get proposals and hire</div>
+
+            <!-- HIDDEN TEXT -->
+            <div class="hidden-text">
+                Screen, interview, or book a consult with an expert before hiring.
+            </div>
+
+            <!-- HIDDEN BUTTON -->
+            <div class="hidden-btn">
+                <button class="green-btn">Explore experts</button>
+            </div>
+        </div>
+
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <div class="media-box">
+                <img src="your-image2.jpg">
+            </div>
+
+            <div class="title">Pay when work is done</div>
+
+            <!-- HIDDEN TEXT -->
+            <div class="hidden-text">
+                Only pay once the freelancer completes the work to your satisfaction.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

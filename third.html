@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How it Works Toggle</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 40px;
+    }
+
+    .howitworks-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .howitworks-container h2 {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    /* Toggle wrapper */
+    .toggle-box {
+        display: flex;
+        border: 2px solid #ccc;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    /* Hide radio buttons */
+    .toggle-box input {
+        display: none;
+    }
+
+    /* Labels styling */
+    .toggle-box label {
+        padding: 10px 30px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 30px;
+        transition: 0.3s ease;
+        user-select: none;
+    }
+
+    
+    .toggle-box label:hover {
+        background: #f5f5f5;
+    }
+
+    
+    .toggle-box input:checked + label {
+        background: black;
+        color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .howitworks-container {
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="howitworks-container">
+    <h2>How it works</h2>
+
+    <div class="toggle-box">
+        <!-- Option 1 -->
+        <input type="radio" id="hiring" name="mode" checked>
+        <label for="hiring">For hiring</label>
+
+        <!-- Option 2 -->
+        <input type="radio" id="work" name="mode">
+        <label for="work">For finding work</label>
+    </div>
+</div>
+
+</body>
+</html>
